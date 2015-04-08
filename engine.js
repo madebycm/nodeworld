@@ -19,11 +19,10 @@ var exp = {
                 if(!err){
                     console.log("[OK] MongoDB", "\t", "Port:", db.serverConfig.port);
 
-                    var server = app.listen(process.env.PORT || DEFAULT_HTTP_PORT,function(){
+                    var server = app.listen(process.env.PORT || DEFAULT_HTTP_PORT, function(){
                         console.log('[OK] Server', "\t", "Port:", server.address().port)
 
                         resolve(db);
-
                     });
                 }
 
@@ -35,6 +34,7 @@ var exp = {
         });
     },
     app: app,
+    Promise: Promise,
 }
 
 module.exports = exp;

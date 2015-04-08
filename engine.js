@@ -1,6 +1,6 @@
 var // madebycm 2015
-    
-    DEFAULT_HTTP_PORT = 3000,
+   
+    DEFAULT_HTTP_PORT = 9000,
     DEFAULT_MONGO_PORT = 27071,
 
     express = require('express'),

@@ -6,6 +6,4 @@ app.get('/', function(req, res){
 
 engine.boot('myCollection').then(function(db){
 
-    console.log('Hello world!');
-
 });

@@ -10,6 +10,7 @@ var // madebycm 2015
 ;
 
 app.set('view engine', 'ejs');
+app.disable('x-powered-by');
 
 var exp = {
     boot: function(collection){
